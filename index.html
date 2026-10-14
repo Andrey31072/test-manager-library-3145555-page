@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manager Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <strong>Manager Library</strong>
+        <span>React + Laravel</span>
+      </nav>
+      <div class="heroContent">
+        <h1>Manager Library</h1>
+        <p>A small-library operations system built from a spec-first reading of the product rules, API contract, and data model.</p>
+      </div>
+    </header>
+    <main>
+      <section class="band">
+        <h2>Operational Scope</h2>
+        <div class="grid">
+          <article><h3>Catalog</h3><p>Active books, fixed categories, optional covers, ISBN uniqueness, and logical deletion.</p></article>
+          <article><h3>Members</h3><p>Member records with unique document numbers. Members are data, not login users.</p></article>
+          <article><h3>Loans</h3><p>One to three books, 14-day due dates, frozen item values, one-line returns, and calculated status.</p></article>
+          <article><h3>Reports</h3><p>Most-borrowed aggregation grouped by frozen book title and category, without exposing members.</p></article>
+        </div>
+      </section>
+      <section class="band split">
+        <div>
+          <h2>Six Repositories</h2>
+          <p>The project is intentionally split across docs, API, app, page, infra, and tool repositories. Each repository has a narrow responsibility and evidence path.</p>
+        </div>
+        <ol>
+          <li>Docs: English SDD adaptation before code.</li>
+          <li>API: Laravel contract and business rules.</li>
+          <li>App: React operational workflow.</li>
+          <li>Page: public static presentation.</li>
+          <li>Infra: empty PostgreSQL engine and containers.</li>
+          <li>Tool: API-only demo seeder.</li>
+        </ol>
+      </section>
+      <section class="band">
+        <h2>Boundaries Kept</h2>
+        <p>No fines, payments, reservations, renewals, email, bulk imports, branches, publisher/year/language fields, audit columns, report tables, or member login were added.</p>
+      </section>
+    </main>
+  </body>
+</html>
